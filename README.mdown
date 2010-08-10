@@ -1,0 +1,27 @@
+PICKER
+======
+
+[![](http://lh5.ggpht.com/_O4LAMWmWg8o/TGEfJ4HkfII/AAAAAAAAAg0/tk-8i33qqys/Screen%20shot%202010-08-10%20at%2010.38.50.png)](http://lh5.ggpht.com/_O4LAMWmWg8o/TGEfJ4HkfII/AAAAAAAAAg0/tk-8i33qqys/Screen%20shot%202010-08-10%20at%2010.38.50.png)
+
+
+WHAT IS THIS?
+=============
+
+This is a quick and dirty implementation of a menu-bar based systemwide color picker. It always runs in your menu bar, and won't close by itself (so you can use it in the background and not steal focus from the current window).
+
+It will provide access to any custom color pickers you have installed (for example Wade's excellent Developer Color Picker - http://www.panic.com/~wade/picker/).
+
+HOW TO USE?
+===========
+
+Build & go in Xcode. The app should run hidden from the Dock but an icon will appear in your menu bar.
+
+It should be set up for running on Mac OS X v10.6 Snow Leopard without issue. Haven't tested on any other OS, but I suspect it should run fine on 10.5 too.
+
+Uses some necessary private API (to load in the color palette, and to show the toolbar).
+
+TODO:
+=====
+
+* Add a quit button (and possibly settings?)
+* Get a real icon set
