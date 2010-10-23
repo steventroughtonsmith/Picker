@@ -1,9 +1,9 @@
 PICKER
-======
+=============
 
 [Download](http://github.com/downloads/steventroughtonsmith/Picker/Picker.zip)
 
-======
+=============
 
 [![](http://lh5.ggpht.com/_O4LAMWmWg8o/TGEfJ4HkfII/AAAAAAAAAg0/tk-8i33qqys/Screen%20shot%202010-08-10%20at%2010.38.50.png)](http://lh5.ggpht.com/_O4LAMWmWg8o/TGEfJ4HkfII/AAAAAAAAAg0/tk-8i33qqys/Screen%20shot%202010-08-10%20at%2010.38.50.png)
 
