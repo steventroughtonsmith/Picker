@@ -8,7 +8,7 @@
 
 #import "PickerAppDelegate.h"
 #import "PickerBackgroundView.h"
-
+#import "NSWindow+AlwaysKey.h"
 /* A few private APIs we need */
 
 @interface NSToolbarView : NSView // Private API!
