@@ -8,6 +8,7 @@
 
 #import "PickerAppDelegate.h"
 #import "PickerBackgroundView.h"
+#import "NSApp+LoginItem.h"
 
 /* A few private APIs we need */
 
@@ -162,6 +163,7 @@
 		
 		[[NSAnimationContext currentContext] setDuration:0.15];
 		[[popupWindow animator] setAlphaValue:1.0];	
+        
 	}
 }
 
@@ -187,7 +189,12 @@
 						keyEquivalent:@""];
 	[menuItem setTarget:self];
 	
-	
+    loginMenuItem = [menu addItemWithTitle:@"Login"
+							   action:@selector(toggleLoginItem)
+						keyEquivalent:@""];
+	[loginMenuItem setTarget:self];
+    [loginMenuItem setState:[NSApp isInStartup]?NSOnState:NSOffState];
+
 	return [menu autorelease];
 }
 
@@ -208,6 +215,16 @@
 	
 
 	return [menu autorelease];
+}
+
+-(void)toggleLoginItem
+{
+    if( [NSApp isInStartup] )
+        [NSApp removeFromStartup];
+    else
+        [NSApp addToStartup];
+    [loginMenuItem setState:[NSApp isInStartup]?NSOnState:NSOffState];
+
 }
 
 @end

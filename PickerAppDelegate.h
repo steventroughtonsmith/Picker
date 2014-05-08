@@ -17,6 +17,7 @@
 	NSWindow *popupWindow;
 @private
 	NSStatusItem *_statusItem;
+    NSMenuItem *loginMenuItem;
 }
 
 - (NSMenu *) createMenu;
